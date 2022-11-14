@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import Banner from './componentes/Banner';
-// import Formulario from './componentes/Formulario';
+import Formulario from './componentes/Formulario';
 // import Time from './componentes/Time';
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      {/* <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} /> */}
+      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
 
       {/* {times.map(time => <Time
         key={time.nome}
