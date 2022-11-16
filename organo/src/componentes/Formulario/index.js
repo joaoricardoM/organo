@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
+import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
 
@@ -51,10 +52,10 @@ const Formulario = (props) => {
                     value={image}
                     aoAlterado={valor => setImage(valor)}
                 />
-                <CampoTexto
+                <ListaSuspensa
                     obrigatorio={true}
                     label="Time"
-                    itens={props.time}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
