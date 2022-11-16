@@ -49,11 +49,13 @@ const Formulario = (props) => {
                     placeholder="Insira o link da imagem"
                     value={image}
                     aoAlterado={valor => setImage(valor)}
-                    />
+                />
                 <CampoTexto
                     obrigatorio={true}
                     label="Time"
-                    placeholder=""
+                    itens={props.time}
+                    valor={time}
+                    aoAlterado={valor => setTime(valor)}
                 />
             </form>
         </section>
