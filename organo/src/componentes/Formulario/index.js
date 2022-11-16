@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import './Formulario.css'
 
@@ -26,7 +27,7 @@ const Formulario = (props) => {
     }
 
     return (
-        <section className="Formulario">
+        <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Olá bem vindo, preencha os dados para criar o card do colaborador </h2>
                 <CampoTexto
@@ -57,6 +58,9 @@ const Formulario = (props) => {
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
+                <Botao>
+                    Criar Card
+                </Botao>
             </form>
         </section>
     )
